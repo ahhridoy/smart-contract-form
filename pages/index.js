@@ -33,7 +33,6 @@ export default function Home() {
                       style={{ paddingTop: "50px" }}
                     >
                       <div className="wizard-content-form">
-
                         <div className="badge-selection">
                           <h3>
                             Which ERC standard ? (Choosing whichever is fine)

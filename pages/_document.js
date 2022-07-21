@@ -55,16 +55,16 @@ class MyDocument extends Document {
             type="text/css"
             title="color-5"
           />
-          </Head>
-          
+        </Head>
+
         <body>
           <Main />
           <NextScript />
 
-          <script src="assets/js/jquery-3.3.1.min.js"></script>
-          <script src="assets/js/popper.min.js"></script>
-          <script src="assets/js/bootstrap.min.js"></script>
-          <script src="assets/js/switch.js"></script>
+          <script src="assets/js/jquery-3.3.1.min.js" async />
+          <script src="assets/js/popper.min.js" async />
+          <script src="assets/js/bootstrap.min.js" async />
+          <script src="assets/js/switch.js" async />
           {/* <script src="assets/js/main.js"></script> */}
           {/* <script>
 		$("#files").change(function() {

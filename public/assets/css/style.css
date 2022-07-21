@@ -73,7 +73,8 @@ a {
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -112,14 +113,14 @@ select:focus,
 select:visited {
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   text-decoration: none;
   color: inherit;
 }
 
 .form-control {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .relative-position {
@@ -191,7 +192,7 @@ h6 {
   border-radius: 20px;
   background-color: #f1f9fe;
   -webkit-box-shadow: 0px 5px 62px 0px rgba(0, 0, 0, 0.19);
-          box-shadow: 0px 5px 62px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 5px 62px 0px rgba(0, 0, 0, 0.19);
 }
 
 .wizard {
@@ -227,10 +228,12 @@ h6 {
 .steps li.first a {
   border: 2px solid #5756a2;
 }
-.steps li.checked a, .steps li.current a {
+.steps li.checked a,
+.steps li.current a {
   border: 2px solid #5756a2;
 }
-.steps li.checked a:after, .steps li.current a:after {
+.steps li.checked a:after,
+.steps li.current a:after {
   top: 0;
   left: 13px;
   font-size: 20px;
@@ -341,16 +344,19 @@ select.form-control option[value=""][disabled] {
 .actions li button i {
   position: relative;
 }
-.actions li:first-child span, .actions li:first-child button {
+.actions li:first-child span,
+.actions li:first-child button {
   color: #8a8a8a;
   background-color: #d3d3d600;
   border-color: #c6e0fd;
   border-radius: 3px;
 }
-.actions li:first-child span i, .actions li:first-child button i {
+.actions li:first-child span i,
+.actions li:first-child button i {
   left: -45px;
 }
-.actions li .js-btn-next i, .actions li button i {
+.actions li .js-btn-next i,
+.actions li button i {
   right: -45px !important;
   left: inherit !important;
 }
@@ -361,17 +367,17 @@ select.form-control option[value=""][disabled] {
 .actions li:last-child span:hover {
   background-color: #5756a2;
 }
-.actions li[aria-disabled=true] a {
+.actions li[aria-disabled="true"] a {
   opacity: 0;
   -webkit-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
 }
-.actions li[aria-disabled=false] ~ li a {
+.actions li[aria-disabled="false"] ~ li a {
   background-color: #5756a2;
   color: #fff;
 }
-.actions li[aria-disabled=false] ~ li a:hover {
+.actions li[aria-disabled="false"] ~ li a:hover {
   background-color: #5756a2;
 }
 
@@ -384,15 +390,21 @@ select.form-control option[value=""][disabled] {
 .checkbox-tick label.male {
   margin-right: 26px;
 }
-.checkbox-tick input, .checkbox-tick .wizard-form-field select, .wizard-form-field .checkbox-tick select {
+.checkbox-tick input,
+.checkbox-tick .wizard-form-field select,
+.wizard-form-field .checkbox-tick select {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-.checkbox-tick input:checked ~ .checkmark, .checkbox-tick .wizard-form-field select:checked ~ .checkmark, .wizard-form-field .checkbox-tick select:checked ~ .checkmark {
+.checkbox-tick input:checked ~ .checkmark,
+.checkbox-tick .wizard-form-field select:checked ~ .checkmark,
+.wizard-form-field .checkbox-tick select:checked ~ .checkmark {
   background: #999;
 }
-.checkbox-tick input:checked ~ .checkmark:after, .checkbox-tick .wizard-form-field select:checked ~ .checkmark:after, .wizard-form-field .checkbox-tick select:checked ~ .checkmark:after {
+.checkbox-tick input:checked ~ .checkmark:after,
+.checkbox-tick .wizard-form-field select:checked ~ .checkmark:after,
+.wizard-form-field .checkbox-tick select:checked ~ .checkmark:after {
   display: block;
 }
 .checkbox-tick .checkmark {
@@ -430,8 +442,8 @@ select.form-control option[value=""][disabled] {
   font-size: 13px;
   line-height: 1.9;
   -webkit-transform: translateY(-5px);
-      -ms-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -ms-transform: translateY(-5px);
+  transform: translateY(-5px);
 }
 .checkbox-circle label a {
   color: #6d7f52;
@@ -439,12 +451,16 @@ select.form-control option[value=""][disabled] {
 .checkbox-circle label a:hover {
   color: #89b843;
 }
-.checkbox-circle input, .checkbox-circle .wizard-form-field select, .wizard-form-field .checkbox-circle select {
+.checkbox-circle input,
+.checkbox-circle .wizard-form-field select,
+.wizard-form-field .checkbox-circle select {
   position: absolute;
   opacity: 0;
   cursor: pointer;
 }
-.checkbox-circle input:checked ~ .checkmark:after, .checkbox-circle .wizard-form-field select:checked ~ .checkmark:after, .wizard-form-field .checkbox-circle select:checked ~ .checkmark:after {
+.checkbox-circle input:checked ~ .checkmark:after,
+.checkbox-circle .wizard-form-field select:checked ~ .checkmark:after,
+.wizard-form-field .checkbox-circle select:checked ~ .checkmark:after {
   display: block;
 }
 .checkbox-circle .checkmark {
@@ -482,21 +498,23 @@ select.form-control option[value=""][disabled] {
   border-radius: 100%;
   font-size: 10px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .has-float-label i:hover {
   background: #5756a2;
   border-color: #5756a2;
   color: #fff;
 }
-.has-float-label i + input, .has-float-label .wizard-form-field i + select, .wizard-form-field .has-float-label i + select {
+.has-float-label i + input,
+.has-float-label .wizard-form-field i + select,
+.wizard-form-field .has-float-label i + select {
   padding-left: 75px;
 }
 .has-float-label label {
@@ -650,21 +668,24 @@ select.form-control option[value=""][disabled] {
   border-radius: 100%;
   font-size: 10px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .tooltip-info i:hover {
   background: #5756a2;
   border-color: #5756a2;
   color: #fff;
 }
-.tooltip-info span, .tooltip-info input[type=text], .tooltip-info .wizard-form-field select[type=text], .wizard-form-field .tooltip-info select[type=text] {
+.tooltip-info span,
+.tooltip-info input[type="text"],
+.tooltip-info .wizard-form-field select[type="text"],
+.wizard-form-field .tooltip-info select[type="text"] {
   padding-left: 50px;
 }
 
@@ -757,14 +778,14 @@ select.form-control option[value=""][disabled] {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   min-width: -webkit-max-content;
   min-width: -moz-max-content;
   min-width: max-content;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-left: 32px;
 }
 .multisteps-form__progress-btn:first-child {
@@ -785,7 +806,7 @@ select.form-control option[value=""][disabled] {
   border: 2px solid #e3e3e3;
   border-radius: 50%;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   z-index: 3;
 }
 .multisteps-form__progress-btn:after {
@@ -834,99 +855,99 @@ select.form-control option[value=""][disabled] {
   opacity: 1;
   visibility: visible;
 }
-.multisteps-form__panel[data-animation=scaleOut] {
+.multisteps-form__panel[data-animation="scaleOut"] {
   -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
 }
-.multisteps-form__panel[data-animation=scaleOut].js-active {
+.multisteps-form__panel[data-animation="scaleOut"].js-active {
   -webkit-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
   -webkit-transition-delay: 0s;
-       -o-transition-delay: 0s;
-          transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
-.multisteps-form__panel[data-animation=slideHorz] {
+.multisteps-form__panel[data-animation="slideHorz"] {
   left: -50px;
 }
-.multisteps-form__panel[data-animation=slideHorz].js-active {
+.multisteps-form__panel[data-animation="slideHorz"].js-active {
   -webkit-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.25s;
-       -o-transition-duration: 0.25s;
-          transition-duration: 0.25s;
+  -o-transition-duration: 0.25s;
+  transition-duration: 0.25s;
   -webkit-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
-       -o-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
-          transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  -o-transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
+  transition-timing-function: cubic-bezier(0.2, 1.13, 0.38, 1.43);
   -webkit-transition-delay: 0s;
-       -o-transition-delay: 0s;
-          transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
   left: 0;
 }
-.multisteps-form__panel[data-animation=slideVert] {
+.multisteps-form__panel[data-animation="slideVert"] {
   top: 30px;
 }
-.multisteps-form__panel[data-animation=slideVert].js-active {
+.multisteps-form__panel[data-animation="slideVert"].js-active {
   -webkit-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
   -webkit-transition-delay: 0s;
-       -o-transition-delay: 0s;
-          transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
   top: 0;
 }
-.multisteps-form__panel[data-animation=fadeIn].js-active {
+.multisteps-form__panel[data-animation="fadeIn"].js-active {
   -webkit-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.3s;
-       -o-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
   -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
   -webkit-transition-delay: 0s;
-       -o-transition-delay: 0s;
-          transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
 }
-.multisteps-form__panel[data-animation=scaleIn] {
+.multisteps-form__panel[data-animation="scaleIn"] {
   -webkit-transform: scale(0.9);
-      -ms-transform: scale(0.9);
-          transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  transform: scale(0.9);
 }
-.multisteps-form__panel[data-animation=scaleIn].js-active {
+.multisteps-form__panel[data-animation="scaleIn"].js-active {
   -webkit-transition-property: all;
   -o-transition-property: all;
   transition-property: all;
   -webkit-transition-duration: 0.2s;
-       -o-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
   -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
+  -o-transition-timing-function: linear;
+  transition-timing-function: linear;
   -webkit-transition-delay: 0s;
-       -o-transition-delay: 0s;
-          transition-delay: 0s;
+  -o-transition-delay: 0s;
+  transition-delay: 0s;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 .wizard-part-title h3 {
@@ -940,12 +961,13 @@ select.form-control option[value=""][disabled] {
   margin: 0 auto;
   max-width: 1090px;
   margin-bottom: 30px;
-
 }
 .badge-selection label {
   margin-right: 30px;
 }
-.badge-selection input, .badge-selection .wizard-form-field select, .wizard-form-field .badge-selection select {
+.badge-selection input,
+.badge-selection .wizard-form-field select,
+.wizard-form-field .badge-selection select {
   height: 25px;
   width: 25px;
 }
@@ -1014,7 +1036,8 @@ select.form-control option[value=""][disabled] {
   margin: 0 auto;
   max-width: 1095px;
 }
-.wizard-form-field input, .wizard-form-field select {
+.wizard-form-field input,
+.wizard-form-field select {
   width: 100%;
   height: 80px;
   border: none;
@@ -1028,14 +1051,16 @@ select.form-control option[value=""][disabled] {
   background-color: #ddeef9;
   border: 2px solid #ddeef9;
 }
-.wizard-form-field input:focus, .wizard-form-field select:focus {
+.wizard-form-field input:focus,
+.wizard-form-field select:focus {
   border: 2px solid #5756a2;
   background-color: transparent;
 }
 .wizard-form-field select {
   height: 80px !important;
 }
-.wizard-form-field .wizard-form-input input::-webkit-input-placeholder, .wizard-form-field .wizard-form-input select::-webkit-input-placeholder {
+.wizard-form-field .wizard-form-input input::-webkit-input-placeholder,
+.wizard-form-field .wizard-form-input select::-webkit-input-placeholder {
   font-size: 20px;
   font-weight: 500;
   -webkit-transition: 0.3s all ease-out;
@@ -1169,7 +1194,10 @@ select.form-control option[value=""][disabled] {
   left: 0px;
   border: 2px solid #c3e9ff;
 }
-.wizard-option-list .taxable-area .tax-check:checked ~ .checkbo-box-border:before {
+.wizard-option-list
+  .taxable-area
+  .tax-check:checked
+  ~ .checkbo-box-border:before {
   display: block;
 }
 .wizard-option-list .texable-option {
@@ -1183,7 +1211,7 @@ select.form-control option[value=""][disabled] {
 
 .wizard-identity-box {
   -webkit-box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 5px 27px 0px rgba(0, 0, 0, 0.16);
 }
 .wizard-identity-box .wizard-identity-icon img {
   padding-top: 50px;
@@ -1306,7 +1334,9 @@ select.form-control option[value=""][disabled] {
   font-size: 18px;
   top: -7px;
 }
-.n-summary input, .n-summary .wizard-form-field select, .wizard-form-field .n-summary select {
+.n-summary input,
+.n-summary .wizard-form-field select,
+.wizard-form-field .n-summary select {
   height: 30px;
   width: 30px;
   border: 2px solid #c3e8ff;
@@ -1428,8 +1458,8 @@ select.form-control option[value=""][disabled] {
     padding: 90px 0px;
     margin: 0;
     -webkit-transform: scale(0.9);
-        -ms-transform: scale(0.9);
-            transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
   }
 
   .multisteps-form__progress {
@@ -1507,8 +1537,8 @@ select.form-control option[value=""][disabled] {
     width: 50%;
     left: 50%;
     -webkit-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-            transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
   }
   .wizard-topper .wizard-progress {
     width: 100%;
@@ -1574,7 +1604,8 @@ select.form-control option[value=""][disabled] {
     width: 70%;
   }
 
-  .actions li span, .actions li button {
+  .actions li span,
+  .actions li button {
     width: 170px;
   }
 
@@ -1588,8 +1619,8 @@ select.form-control option[value=""][disabled] {
   }
 
   .steps li.current:after,
-.steps li.checked:after,
-.steps li:after {
+  .steps li.checked:after,
+  .steps li:after {
     display: none;
   }
 
@@ -1646,11 +1677,13 @@ select.form-control option[value=""][disabled] {
     min-height: auto;
   }
 
-  .actions li:first-child span i, .actions li:first-child button i {
+  .actions li:first-child span i,
+  .actions li:first-child button i {
     left: -25px;
   }
 
-  .actions li .js-btn-next i, .actions li button i {
+  .actions li .js-btn-next i,
+  .actions li button i {
     right: -25px !important;
   }
 }
@@ -1675,7 +1708,8 @@ select.form-control option[value=""][disabled] {
     font-size: 18px;
   }
 
-  .actions li span, .actions li button {
+  .actions li span,
+  .actions li button {
     width: 170px;
     min-width: 100%;
   }
@@ -1692,7 +1726,8 @@ select.form-control option[value=""][disabled] {
     padding-top: 65px;
   }
 
-  .wizard-form-field input, .wizard-form-field select {
+  .wizard-form-field input,
+  .wizard-form-field select {
     padding: 0 25px;
   }
 
