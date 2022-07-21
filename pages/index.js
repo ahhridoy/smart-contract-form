@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -41,7 +40,7 @@ export default function Home() {
                             <input
                               type="radio"
                               defaultChecked="checked"
-                              name="radio2"
+                              name="erc"
                             />
                             <span className="checkmark">
                               ERC-721 (standard)
@@ -49,7 +48,7 @@ export default function Home() {
                           </label>{" "}
                           <br />
                           <label>
-                            <input type="radio" name="radio2" />
+                            <input type="radio" name="erc" />
                             <span className="checkmark">
                               ERC-721A (improved version of ERC721 costing less
                               gas fees )
@@ -60,16 +59,12 @@ export default function Home() {
                         <div className="badge-selection">
                           <h3>Do you want whitelisting function ?</h3>
                           <label>
-                            <input
-                              type="radio"
-                              defaultChecked="checked"
-                              name="radio"
-                            />
+                            <input type="radio" name="whitelisting" />
                             <span className="checkmark">Yes</span>
                           </label>{" "}
                           <br />
                           <label>
-                            <input type="radio" name="radio" />
+                            <input type="radio" name="whitelisting" />
                             <span className="checkmark">No</span>
                           </label>
                         </div>
@@ -77,16 +72,12 @@ export default function Home() {
                         <div className="badge-selection">
                           <h3>Do you want reveal function ?</h3>
                           <label>
-                            <input
-                              type="radio"
-                              defaultChecked="checked"
-                              name="radio"
-                            />
+                            <input type="radio" name="reveal" />
                             <span className="checkmark">Yes</span>
                           </label>{" "}
                           <br />
                           <label>
-                            <input type="radio" name="radio" />
+                            <input type="radio" name="reveal" />
                             <span className="checkmark">No</span>
                           </label>
                         </div>
@@ -94,16 +85,12 @@ export default function Home() {
                         <div className="badge-selection">
                           <h3>Will it be a free mint ?</h3>
                           <label>
-                            <input
-                              type="radio"
-                              defaultChecked="checked"
-                              name="radio"
-                            />
+                            <input type="radio" name="freemint" />
                             <span className="checkmark">Yes</span>
                           </label>{" "}
                           <br />
                           <label>
-                            <input type="radio" name="radio" />
+                            <input type="radio" name="freemint" />
                             <span className="checkmark">No</span>
                           </label>
                         </div>
@@ -114,16 +101,12 @@ export default function Home() {
                             100 NFT free )
                           </h3>
                           <label>
-                            <input
-                              type="radio"
-                              defaultChecked="checked"
-                              name="radio"
-                            />
+                            <input type="radio" name="partial" />
                             <span className="checkmark">Yes</span>
                           </label>{" "}
                           <br />
                           <label>
-                            <input type="radio" name="radio" />
+                            <input type="radio" name="partial" />
                             <span className="checkmark">No</span>
                           </label>
                         </div>
