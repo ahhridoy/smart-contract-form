@@ -950,11 +950,11 @@ select.form-control option[value=""][disabled] {
   transform: scale(1);
 }
 
-.wizard-part-title h3 {
+.wizard-part-title {
   color: #5756a2;
   font-size: 50px;
   font-weight: 700;
-  text-align: left;
+  text-align: center;
 }
 
 .badge-selection {

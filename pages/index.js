@@ -16,6 +16,7 @@ export default function Home() {
             {/*form panels*/}
             <div className="row">
               <div className="col-12 col-lg-12 m-auto">
+              <h3 className="wizard-part-title">Update Your Information</h3>
                 <form
                   className="multisteps-form__form position-relative clearfix"
                   action="#"
@@ -32,6 +33,7 @@ export default function Home() {
                       style={{ paddingTop: "50px" }}
                     >
                       <div className="wizard-content-form">
+
                         <div className="badge-selection">
                           <h3>
                             Which ERC standard ? (Choosing whichever is fine)
@@ -186,7 +188,7 @@ export default function Home() {
                                 id="submit-form"
                                 title="NEXT"
                               >
-                                SUMBIT <i className="fa fa-arrow-right" />
+                                SUMBIT
                               </button>
                             </li>
                           </ul>
